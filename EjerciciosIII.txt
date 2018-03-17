@@ -1,0 +1,25 @@
+OPCIONES::
+Mientras vemos su examen 1 por 1:
+
+1. Terminar de resolver los problemas del examen.
+
+2. Checar el problema en los códigos que se les pasarán.
+
+3. Problemas de matrices y vectores: los de ayer + 
+multiplicación de matrices, la tarea +
+
+	a) En 2D, crear una función `rotator` tal que:
+		# Python
+		rotator(theta) # devuelve la matriz de rotación en 2D:
+					   # [ cos(theta)  -sin(theta) ]
+					   # [						   ]
+					   # [ sin(theta)   cos(theta) ]
+
+	b) Para un vector en 2D, crear una función `rotate`, de tal manera que
+		# Python
+		rotate(vector, theta) # Devuelve el vector rotado por un ángulo theta,
+							  # esta función utiliza la función anterior.
+
+	c) Dada una matriz, generar una función `exchangeCols` tal que:
+		# Python
+		exchangeCols(matrix, col1, col2) # Devuelve la matriz `matrix` con las columnas intercambiadas

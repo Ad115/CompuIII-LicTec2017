@@ -1,0 +1,15 @@
+Números complejos:
+	Producto
+		(a +ib)(c +id) = (ac-bd) + i(ad+bc)
+
+Vectores:
+	Suma
+	Módulo
+	Multiplicación por escalar
+	Producto interno
+
+Extra:
+Dado un vector R, y dos números m1, m2, implementar la función f tal que:
+
+	f(R, m1, m2) = - (m1*m2) / |R|^2
+

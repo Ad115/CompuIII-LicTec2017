@@ -1,0 +1,29 @@
+Examen parte 2:
+	Un número complejo a + ib se puede representar como un arreglo con dos entradas. (En python [a, b], en Mathematica {a,b})
+
+	1. Realizar una función "complexPol" que, dados los números complejos z y c, devuelva z^2 + c. Esta función tiene que tener la siguiente interfaz:
+
+		# Ejemplo en Python
+		z = [1, 2]
+		c = [1, 1]
+		complexPol(z, c) # Resultado: [-2, 5]
+
+		(* Ejemplo en Mathematica *)
+		z = {3, 4}
+		c = {-5, 26}
+		complexPol[z, c] # Resultado: {-5, 26}
+
+	Con un c fijo, podemos armar con esta función una secuencia comenzando con un valor inicial z0 y usando z_n+1 = complexPol(z_n)
+
+	2. Realizar una función "iterationsToGo" que, dados dos números complejos z,c y una función p (p recibe dos complejos y devuelve un complejo), realize la secuencia z_n = p(z_n-1, c) y devuelva la n para la cual |z_n| > 10, si n es mayor que nMAX = 250, devuelve nMAX+1. La función debe de conformar con la siguiente interfaz:
+
+		# Ejemplo en Python
+		z = [1, 1]
+		c = [0.1, 0.1]
+		iterationsToGo(z, c, complexPol) # Resultado: 2
+
+		(* Ejemplo en Mathematica *)
+		z = {0.1, 0.1}
+		c = {0.1, 0.1}
+		iterationsToGo[z, c, complexPol] # Resultado: 251
+		
